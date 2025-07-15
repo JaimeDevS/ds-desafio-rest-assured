@@ -66,8 +66,8 @@ public class MovieControllerRA {
 			.statusCode(200)
 			.body("content.id[0]", is(1))
 			.body("content.title[0]", equalTo("The Witcher"))
-			.body("content.score[0]", is(4.5F))
-			.body("content.count[0]", is(2))
+			.body("content.score[0]", is(4.25F))
+			.body("content.count[0]", is(4))
 			.body("content.image[0]", equalTo("https://www.themoviedb.org/t/p/w533_and_h300_bestv2/jBJWaqoSCiARWtfV0GlqHrcdidd.jpg"));
 	}
 	
@@ -79,8 +79,8 @@ public class MovieControllerRA {
 			.statusCode(200)
 			.body("id", is(1))
 			.body("title", equalTo("The Witcher"))
-			.body("score", is(4.5F))
-			.body("count", is(2))
+			.body("score", is(4.25F))
+			.body("count", is(4))
 			.body("image", equalTo("https://www.themoviedb.org/t/p/w533_and_h300_bestv2/jBJWaqoSCiARWtfV0GlqHrcdidd.jpg"));
 			
 	}
